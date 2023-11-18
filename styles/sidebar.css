@@ -1,0 +1,48 @@
+.sidebar{
+    position: fixed;
+    left: 0px;
+    bottom:0px;
+    top:55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200px;
+    padding-top: 5px;
+}
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(228, 226, 226);
+}
+.sidebar-link img{
+    height:24px;
+    margin-bottom: 4px;
+}
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+}
+.search-button .tooltip,.voice-search-button .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,.voice-search-button:hover .tooltip{
+    opacity: 1;
+}
+.search-button, .voice-search-button{
+    position: relative;
+}
